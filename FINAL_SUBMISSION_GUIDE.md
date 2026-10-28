@@ -42,8 +42,9 @@ Before discussing the work, be ready to explain the method used in each task, th
 
 ## GitHub and VLMS
 
-- Planned individual repository: `https://github.com/IzohCoder/bit-2118-scientific-computing-izohcoder` (not yet verified or published).
-- The GitHub CLI in the project environment reported that the saved authentication token was invalid after the browser login. Publication must be retried after `gh auth refresh -h github.com` succeeds in the project environment.
+- Planned individual repository name: `bit-2118-scientific-computing-izohcoder` (not yet created).
+- Public publication and push are waiting for your explicit approval. Automatic review blocked the public push because it treated publishing this assignment as external disclosure and found the earlier authorization insufficiently clear for the exact payload.
+- The GitHub CLI in the project environment also reported that its saved authentication token was invalid after the browser login. After approving publication, refresh it with `& 'C:\Program Files\GitHub CLI\gh.exe' auth refresh -h github.com` in PowerShell and confirm `auth status` succeeds.
 - MKU VLMS was not available from this workspace. The student must sign in to VLMS and upload/submit the repository URL and required documentation using the assignment's submission area.
 
 ## Final checklist

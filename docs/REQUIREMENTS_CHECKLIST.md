@@ -26,7 +26,7 @@ Source of truth: `BIT_2118_Scientific_Computing Group Work.pdf`. The PDF says ev
 | Report actual outputs and interpretations | `docs/TECHNICAL_REPORT.md`, `results/runs/` | Complete for the recorded run; benchmark time is machine-dependent |
 | Compare assignment with optional reference repository | `docs/TECHNICAL_REPORT.md` | README/topic and file-layout comparison completed. Individual reference source pages could not be retrieved, so a line-by-line code comparison remains unverified. PDF remains authoritative. |
 | Reproducible setup and run instructions | `README.md`, `requirements.txt` | Complete |
-| Individual repository; do not use group repository | GitHub account is `IzohCoder`; planned repository name `bit-2118-scientific-computing-izohcoder` | Local preparation complete; publication awaits valid CLI authentication and network access |
+| Individual repository; do not use group repository | Local Git repository and commit `1d18bc9`; planned GitHub name `bit-2118-scientific-computing-izohcoder` | Local commit complete. Public publication is awaiting explicit user approval after automatic review blocked external disclosure; CLI authentication also needs refresh. |
 | Student identifiers and personal details | `FINAL_SUBMISSION_GUIDE.md` | Placeholder retained; enter only if required by lecturer/VLMS |
 | VLMS upload and final submission | `FINAL_SUBMISSION_GUIDE.md` | Must be completed by the student; no VLMS access was supplied |
 
@@ -35,4 +35,4 @@ Source of truth: `BIT_2118_Scientific_Computing Group Work.pdf`. The PDF says ev
 - All 19 task launchers completed successfully in the recorded run.
 - Numerical residuals and/or exact/analytical comparisons are printed where appropriate; captured output is in `results/runs/`.
 - Figures are generated into `results/figures/`; their visual review is part of this handover.
-- The GitHub CLI initially completed browser authentication, but the project execution environment later reported its stored token invalid and could not reach the GitHub API. No remote publication is claimed.
+- The GitHub CLI initially completed browser authentication, but the project execution environment later reported its stored token invalid and could not reach the GitHub API. Automatic review blocked the public create-and-push request as external disclosure. No remote publication is claimed.
