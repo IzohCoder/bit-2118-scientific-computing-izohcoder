@@ -1,0 +1,4 @@
+=== BIT 2118 Task 11 ===
+PDF investment cash-flow IRR: Newton=11.54246068%, secant=11.54246068%; NPV residual=2.274e-12
+Changed inflows (+10%): IRR=16.22023541%; interpretation: stronger later inflows raise the break-even rate for the same initial outlay.
+Adaptation - solar pump investment cash flows: break-even discount rate=18.138%, NPV residual=5.00e-12; excludes taxes, inflation, maintenance, and uncertainty.

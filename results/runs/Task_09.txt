@@ -1,0 +1,4 @@
+=== BIT 2118 Task 9 ===
+PDF example dominant eigenvalue=2.561553; centralities={'A': np.float64(0.2192), 'B': np.float64(0.2808), 'C': np.float64(0.2808), 'D': np.float64(0.2192)}; eigen residual=2.69e-15
+Changed network (edge B-C removed): centralities={'A': np.float64(0.25), 'B': np.float64(0.25), 'C': np.float64(0.25), 'D': np.float64(0.25)}
+Adaptation - campus transfer network: the same eigenvector score ranks rooms by connections to already well-connected rooms; it is a structural proxy, not measured passenger volume.

@@ -1,0 +1,5 @@
+=== BIT 2118 Task 4 ===
+PDF example: 0.1+0.2=0.30000000000000004; exact equality with 0.3=False; isclose=True
+sqrt(2) approximation absolute error=0.00021356; relative error=0.01510114%
+Cancellation test x=[1e-4,1e-8,1e-12]: direct= [0.4999875  0.5        0.50004445] stable= [0.4999875 0.5       0.5      ]
+Adaptation - cumulative metering: large baseline + 1000000 tiny increments, expected=100000010.000000, sequential float64=100000009.998679, abs error=0.001321; NumPy array sum=100000010.000000, abs error=0.000000.

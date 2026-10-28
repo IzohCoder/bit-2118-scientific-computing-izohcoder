@@ -1,0 +1,4 @@
+=== BIT 2118 Task 10 ===
+PDF heat-balance root: bisection=27.52521082 C, residual=-7.55e-11; fixed point=27.52521082 C in 13 iterations
+Changed initial guess 10 C: fixed point=27.52521082 C in 14 iterations
+Adaptation - room heating equilibrium: root is the modeled balance point; the illustrative exponential heat-gain law is assumed and is not a building-energy calibration.

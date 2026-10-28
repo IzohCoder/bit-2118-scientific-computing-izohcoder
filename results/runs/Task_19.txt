@@ -1,0 +1,4 @@
+=== BIT 2118 Task 19 ===
+PDF capacity planning: continuous A/B=[0.         5.88235294], capacity=1000.00, cost=105.88; integer best cost/A/B/capacity=(108, 0, 6, 1020)
+Changed requirement 1200: continuous allocation=[0.    7.059], cost=127.06
+Adaptation - vaccine cooler capacity planning: continuous small/large=[0.    4.688], cost=285.94, capacity=150.0 L; integer option cost/small/large/capacity=(297, 3, 3, 150); counts are simplified and ignore route constraints.

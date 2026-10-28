@@ -1,0 +1,4 @@
+=== BIT 2118 Task 6 ===
+PDF example: type-A=3.0000, type-B=4.0000, residual norm=0.00e+00
+Changed demand: type-A=4.0000, type-B=4.0000, residual norm=0.00e+00
+Adaptation - two shared-branch water flows: branch estimates=[10.  8.] L/min; reconstructed meter totals=[18. 24.]; interpretation: two independent meter equations separate otherwise overlapping demand.

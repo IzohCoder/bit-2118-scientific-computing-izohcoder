@@ -1,0 +1,4 @@
+=== BIT 2118 Task 16 ===
+PDF smart meter: trapezoidal=15.700 kWh, Simpson=15.800 kWh, difference=0.100 kWh
+Changed appliance demand (+25%): trapezoidal=19.625 kWh, Simpson=19.750 kWh
+Adaptation - lab smart meter, irregular sampling: energy=7.580 kWh; trapezoids assume linear changes between readings.

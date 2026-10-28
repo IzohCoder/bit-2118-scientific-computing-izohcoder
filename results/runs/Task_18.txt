@@ -1,0 +1,4 @@
+=== BIT 2118 Task 18 ===
+PDF RC charging: V(5s)=4.966310 V, max exact-solution error=9.282e-10 V, success=True
+Changed supply 6 V: V(5s)=5.959572 V
+Adaptation - battery pack voltage recovery: after 10 s=4.150 V toward 4.2 V; ideal first-order RC-like equivalent, not a chemistry battery model.

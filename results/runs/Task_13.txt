@@ -1,0 +1,3 @@
+=== BIT 2118 Task 13 ===
+PDF temperature at 10:30: linear=23.250 C, cubic=23.363 C
+Adaptation - half-hour lab energy demand reconstructed from hourly samples: 1.020 kW; interpolation is inside sampled range and smooth short-term variation is assumed.

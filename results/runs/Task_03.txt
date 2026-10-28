@@ -1,0 +1,4 @@
+=== BIT 2118 Task 3 ===
+PDF example, 1,000,000 latency values: first=[0.03787665 0.01266192 0.04637842 0.03092504 0.00078812], loop=0.4833s, vectorized=0.0092s, speed-up=52.6x
+Changed input: 2,000,000 latency values; mean squared seconds=0.021247; output count=2000000 (vectorized computation rerun at doubled size).
+Adaptation - vibration sensor: mean-square signal=0.021641, peak squared amplitude=0.1291

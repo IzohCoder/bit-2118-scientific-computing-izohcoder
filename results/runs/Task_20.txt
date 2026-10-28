@@ -1,0 +1,4 @@
+=== BIT 2118 Task 20 ===
+PDF Monte Carlo: overload=10.6160% (10616/100000), estimated standard error=0.0974%
+Changed uncertainty std 150: overload=15.8390%; greater demand variability raises modeled overload risk.
+Adaptation - solar pump shortfall probability=34.2840%; simulated daily supply and use are independent normal approximations, so this is a planning estimate rather than a field reliability result.

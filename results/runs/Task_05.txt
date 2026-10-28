@@ -1,0 +1,20 @@
+=== BIT 2118 Task 5 ===
+PDF example: transformation=
+[[ 1.41421356 -1.06066017]
+ [ 1.41421356  1.06066017]]
+points=
+[[ 0.          0.        ]
+ [ 1.41421356  1.41421356]
+ [ 0.35355339  2.47487373]
+ [-1.06066017  1.06066017]]
+determinant=3.0000
+Changed scale: transformation=
+[[ 2.12132034 -1.06066017]
+ [ 2.12132034  1.06066017]]
+points=
+[[ 0.          0.        ]
+ [ 2.12132034  2.12132034]
+ [ 1.06066017  3.18198052]
+ [-1.06066017  1.06066017]]
+determinant=4.5000
+Adaptation - floor-plan survey correction (12-degree orientation, x/y scale 1.04/0.97): transformed corner 3=[0.81559916 1.16503133], area scale=1.0088

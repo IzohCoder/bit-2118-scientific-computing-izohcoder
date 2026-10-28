@@ -1,0 +1,5 @@
+=== BIT 2118 Task 2 ===
+PDF example: hourly weather-station temperature array
+Original 24 readings: mean=23.12 C, min=17.50 C, max=29.40 C
+Warmer day (+2 C): mean=25.12 C, min=19.50 C, max=31.40 C
+Adaptation - 24 hourly lab energy readings: total=23.09 kWh, peak=1.77 kWh at hour 18; voltage-equivalent index first 4=[420. 380. 350. 340.] Wh

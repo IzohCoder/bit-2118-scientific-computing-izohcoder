@@ -1,0 +1,6 @@
+=== BIT 2118 Task 7 ===
+PDF example set 1: x=[5. 5. 5.], residual=0.00e+00
+PDF example set 2: x=[5.317073 5.268293 4.756098], residual=1.78e-15
+PDF example set 3: x=[4.902439 5.609756 5.536585], residual=0.00e+00
+Adaptation - shared water-network demand period 1: branch corrections=[6.5366 5.1463 6.0488]; residual=1.99e-15
+Adaptation - shared water-network demand period 2: branch corrections=[6.0976 6.3902 7.4634]; residual=1.78e-15

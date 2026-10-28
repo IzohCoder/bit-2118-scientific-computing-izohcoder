@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.venv/
+.idea/
+.vscode/
+Thumbs.db
+desktop.ini
+*.log
+/BIT_2118_Scientific_Computing Group Work.pdf

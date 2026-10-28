@@ -1,0 +1,4 @@
+=== BIT 2118 Task 12 ===
+PDF circle/parabola guess=[1.0, 1.0]: solution=[1.51748991 1.30277564], residual=3.46e-13, success=True
+PDF circle/parabola guess=[-1.0, 1.0]: solution=[-1.51748991  1.30277564], residual=3.46e-13, success=True
+Adaptation - radius-3 inspection zone vs curved route: crossing=[1.83637723 2.37228132], residual=6.02e-12, converged=True; planar geometry is assumed.

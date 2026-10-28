@@ -1,0 +1,4 @@
+=== BIT 2118 Task 14 ===
+PDF server-response fit: coefficients=[ 2.1666700e-03 -1.3452381e-01  8.5000000e+01], RMSE=1.550 ms, predicted at 400 users=377.86 ms
+Changed final measurement (+35 ms): predicted at 400=422.86 ms; RMSE=7.79 ms
+Adaptation - reusable water filter flow versus service cycles: fitted flow at cycle 70=4.99 L/min; extrapolation may be unreliable beyond observed range.

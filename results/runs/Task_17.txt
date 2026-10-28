@@ -1,0 +1,4 @@
+=== BIT 2118 Task 17 ===
+PDF cooling after 30 min: Euler h=1 26.4041 C; exact=26.7760 C; error=0.3720 C
+Changed step h=0.5 min: Euler=26.5870 C; absolute error=0.1890 C
+Adaptation - grain moisture content: after 8 h=14.19% from 18%; equilibrium=10%; constant-rate coefficient and uniform ventilation assumed.

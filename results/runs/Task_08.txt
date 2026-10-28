@@ -1,0 +1,4 @@
+=== BIT 2118 Task 8 ===
+PDF example five-node wall temperatures: Jacobi=[86.66666665 73.33333331 59.99999997 46.66666664 33.33333332], Gauss-Seidel=[86.66666665 73.3333333  59.99999997 46.66666665 33.33333332], direct=[86.66666667 73.33333333 60.         46.66666667 33.33333333]; iterations J/GS=150/75
+Changed tolerance 1e-3: Jacobi iterations=70, solution error infinity norm=3.390e-03
+Adaptation - wall grid used as a simplified multi-zone thermal model: the solution decreases from 100 C to 20 C across interior locations; boundary temperatures are fixed and radiation is ignored.
