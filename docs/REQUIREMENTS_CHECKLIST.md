@@ -24,7 +24,7 @@ Source of truth: `BIT_2118_Scientific_Computing Group Work.pdf`. The PDF says ev
 | Task 19: numerical optimization | Task 19 | Complete; capacity change, continuous/integer solutions, vaccine-cooler adaptation |
 | Task 20: random numbers/Monte Carlo | Task 20 | Complete; seeded estimate and standard error, uncertainty change, solar-pump shortfall adaptation, convergence graph |
 | Report actual outputs and interpretations | `docs/TECHNICAL_REPORT.md`, `results/runs/` | Complete for the recorded run; benchmark time is machine-dependent |
-| Compare assignment with optional reference repository | `docs/TECHNICAL_REPORT.md` | README/topic and file-layout comparison completed. Individual reference source pages could not be retrieved, so a line-by-line code comparison remains unverified. PDF remains authoritative. |
+| Compare assignment with optional reference repository | `docs/TECHNICAL_REPORT.md` | Compared the README and task sources; documented confirmed Task 6, 7, and 12 differences. PDF remains authoritative. |
 | Reproducible setup and run instructions | `README.md`, `requirements.txt` | Complete |
 | Individual repository; do not use group repository | [IzohCoder/bit-2118-scientific-computing-izohcoder](https://github.com/IzohCoder/bit-2118-scientific-computing-izohcoder) | Published publicly; `main` was verified against local commit `68eee5e`. |
 | Student identifiers and personal details | `FINAL_SUBMISSION_GUIDE.md` | Placeholder retained; enter only if required by lecturer/VLMS |

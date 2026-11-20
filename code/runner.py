@@ -126,20 +126,33 @@ def task08():
     print(f"PDF example five-node wall temperatures: Jacobi={xj}, Gauss-Seidel={xg}, direct={exact}; iterations J/GS={len(ej)}/{len(eg)}")
     print(f"Changed tolerance 1e-3: Jacobi iterations={len(elo)}, solution error infinity norm={np.linalg.norm(xlo-exact,np.inf):.3e}")
     fig,ax=plt.subplots(); ax.semilogy(ej,label="Jacobi"); ax.semilogy(eg,label="Gauss-Seidel"); ax.set(xlabel="Iteration",ylabel="Maximum update (C)",title="Task 8 convergence"); ax.legend(); ax.grid(True); save(fig,"task08_convergence.png")
-    print("Adaptation - wall grid used as a simplified multi-zone thermal model: the solution decreases from 100 C to 20 C across interior locations; boundary temperatures are fixed and radiation is ignored.")
+    greenhouse_b=np.array([28.,0.,0.,0.,15.])
+    # Solve the same five-point greenhouse row independently with its changed boundary values.
+    def solve_gs(rhs,tol=1e-8):
+        x=np.zeros_like(rhs)
+        for _ in range(500):
+            old=x.copy()
+            for i in range(len(rhs)):
+                x[i]=(rhs[i]-A[i,:i]@x[:i]-A[i,i+1:]@old[i+1:])/A[i,i]
+            if np.linalg.norm(x-old,np.inf)<tol: break
+        return x
+    greenhouse=solve_gs(greenhouse_b)
+    print(f"Adaptation - greenhouse tunnel with end temperatures 28 C and 15 C: interior profile={np.round(greenhouse,3)} C; one-dimensional steady conduction is assumed.")
 
 
 def task09():
     A=np.array([[0.,1.,1.,0.],[1.,0.,1.,1.],[1.,1.,0.,1.],[0.,1.,1.,0.]])
     vals,vecs=np.linalg.eig(A); k=np.argmax(vals.real); v=vecs[:,k].real; score=np.abs(v); score/=score.sum()
     names=["A","B","C","D"]
-    print(f"PDF example dominant eigenvalue={vals[k].real:.6f}; centralities={dict(zip(names,np.round(score,4)))}; eigen residual={np.linalg.norm(A@v-vals[k].real*v):.2e}")
+    print(f"PDF example dominant eigenvalue={vals[k].real:.6f}; centralities={dict(zip(names,[float(v) for v in np.round(score,4)]))}; eigen residual={np.linalg.norm(A@v-vals[k].real*v):.2e}")
     # Change: remove an edge and recompute influence.
     B=A.copy(); B[1,2]=B[2,1]=0
     w,q=np.linalg.eig(B); j=np.argmax(w.real); z=np.abs(q[:,j].real); z/=z.sum()
-    print(f"Changed network (edge B-C removed): centralities={dict(zip(names,np.round(z,4)))}")
-    # Adaptation: room-to-room transfer network; centrality measures access through neighboring rooms.
-    print("Adaptation - campus transfer network: the same eigenvector score ranks rooms by connections to already well-connected rooms; it is a structural proxy, not measured passenger volume.")
+    print(f"Changed network (edge B-C removed): centralities={dict(zip(names,[float(v) for v in np.round(z,4)]))}")
+    # Adaptation: a separate five-stop campus transfer network.
+    campus=np.array([[0.,1.,1.,0.,0.],[1.,0.,1.,1.,0.],[1.,1.,0.,1.,1.],[0.,1.,1.,0.,1.],[0.,0.,1.,1.,0.]])
+    cv,ce=np.linalg.eig(campus); ci=np.argmax(cv.real); cs=np.abs(ce[:,ci].real); cs/=cs.sum()
+    print(f"Adaptation - five-stop campus transfer network: centrality={np.round(cs,4)}; this structural score is not measured passenger volume.")
 
 
 def task10():
@@ -156,9 +169,11 @@ def task10():
     hist=fixed(30); altered=fixed(10)
     print(f"PDF heat-balance root: bisection={bis.root:.8f} C, residual={f(bis.root):.2e}; fixed point={hist[-1]:.8f} C in {len(hist)-1} iterations")
     print(f"Changed initial guess 10 C: fixed point={altered[-1]:.8f} C in {len(altered)-1} iterations")
+    greenhouse_balance=lambda T:T-22-14*np.exp(-T/25)
+    greenhouse_root=root_scalar(greenhouse_balance,bracket=[20,40],method="bisect",xtol=1e-10)
     # Adaptation: temperature setpoint at which a room's heat input balances loss.
     fig,ax=plt.subplots(); t=np.linspace(20,40,300); ax.plot(t,f(t)); ax.axhline(0,color="black",lw=.8); ax.axvline(bis.root,ls="--"); ax.set(xlabel="Room temperature (C)",ylabel="Net heat balance",title="Task 10 equilibrium root"); ax.grid(True); save(fig,"task10_heat_balance.png")
-    print("Adaptation - room heating equilibrium: root is the modeled balance point; the illustrative exponential heat-gain law is assumed and is not a building-energy calibration.")
+    print(f"Adaptation - greenhouse heater balance with changed setpoint/gain parameters: equilibrium={greenhouse_root.root:.6f} C; the illustrative heat-gain law is not a greenhouse calibration.")
 
 
 def task11():
